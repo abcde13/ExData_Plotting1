@@ -6,6 +6,8 @@
 
 source("ElectricPowerConsumptionAnalysis.R")
 
+par(mfrow=c(1,1))
+
 plot(data$Time,data$Global_active_power,type="n",xlab="",
      ylab="Global Active Power (kilowatts)")
 lines(data$Time,data$Global_active_power)
